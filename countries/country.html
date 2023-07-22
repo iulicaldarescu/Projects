@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdU52WQWGIuKU_p7Gal5OL4eH6PXleKSI"></script> -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+  <body class="bg-gray-100 dark:bg-gray-700">
+    <div>
+      <nav id="nav" class="nav bg-white dark:bg-slate-800">
+        <div class="sm:flex sm:justify-between py-8 px-5">
+          <a
+            href="./index.html"
+            id="logo"
+            class="font-bold dark:text-neutral-100 cursor-pointer"
+          >
+            Which Country?
+          </a>
+          <img src="./design/travel-1883060_1920.png" class="w-10 h-10" />
+          <p class="font-semibold">
+            <i id="dark-logo" class="fa-regular fa-moon cursor-pointer"></i>
+            <i
+              id="light-logo"
+              class="fa-regular fa-lightbulb hidden cursor-pointer"
+              style="color: #ffffff"
+            ></i
+            ><span id="dark-logo-text" class="pl-2">Dark mode</span>
+            <span id="light-logo-text" class="pl-2 hidden dark:text-neutral-100"
+              >Light mode</span
+            >
+          </p>
+        </div>
+      </nav>
+
+      <div
+        class="sm:ml-20 sm:mr-20 sm:flex sm:flex-col mt-36 lg:flex-row lg:justify-between xl:flex-row"
+      >
+        <!-- //parent 1 -->
+        <div class="lg:basis-3/5 xl:basis-2/5">
+          <p
+            id="country-name"
+            class="font-bold sm:text-3xl dark:text-white"
+          ></p>
+          <img
+            id="country-flag"
+            alt="Country Flag"
+            class="sm:mt-8 sm:w-4/6 md:max-h-72 lg:w-11/12 xl:w-9/12 2xl:w-8/12"
+          />
+        </div>
+
+        <!-- //parent 2 -->
+
+        <div
+          class="pt-14 md:flex lg:flex-col lg:basis-2/5 xl:flex-row xl:basis-3/5"
+        >
+          <!-- child 1 -->
+          <div class="xl:basis-1/2">
+            <div class="flex">
+              <p
+                class="font-bold w-36 sm:leading-10 sm:text-lg dark:text-stone-400"
+              >
+                Official name
+              </p>
+              <p
+                id="official-name"
+                class="sm:leading-10 md:w-48 dark:text-slate-400"
+              ></p>
+            </div>
+
+            <div class="flex">
+              <p
+                class="font-bold w-36 sm:text-lg sm:leading-10 dark:text-stone-400"
+              >
+                Population
+              </p>
+              <p id="population" class="sm:leading-10 dark:text-slate-400"></p>
+            </div>
+
+            <div class="flex">
+              <p
+                class="font-bold w-36 sm:text-lg sm:leading-10 dark:text-stone-400"
+              >
+                Capital
+              </p>
+              <p
+                id="capital-name"
+                class="sm:leading-10 dark:text-slate-400"
+              ></p>
+            </div>
+
+            <div class="flex">
+              <p
+                class="font-bold sm:w-36 sm:text-lg sm:leading-10 dark:text-stone-400"
+              >
+                Region
+              </p>
+              <p id="region" class="sm:leading-10 dark:text-slate-400"></p>
+            </div>
+          </div>
+          <!-- child 2 -->
+
+          <div class="basis-1/2">
+            <div class="flex">
+              <p
+                class="font-bold sm:w-36 sm:text-lg sm:leading-10 dark:text-stone-400"
+              >
+                Sub-region
+              </p>
+              <p id="sub-region" class="sm:leading-10 dark:text-slate-400"></p>
+            </div>
+
+            <div class="flex">
+              <p
+                class="font-bold sm:w-36 sm:text-lg sm:leading-10 dark:text-stone-400"
+              >
+                Currency
+              </p>
+              <p id="currency" class="sm:leading-10 dark:text-slate-400"></p>
+            </div>
+
+            <div class="flex">
+              <p
+                class="font-bold sm:w-36 sm:text-lg sm:leading-10 dark:text-stone-400"
+              >
+                FIFA
+              </p>
+              <p id="fifa" class="sm:leading-10 dark:text-slate-400"></p>
+            </div>
+
+            <div class="flex">
+              <p
+                class="font-bold sm:w-36 sm:text-lg sm:leading-10 dark:text-stone-400"
+              >
+                Domain
+              </p>
+              <p id="tld" class="sm:leading-10 dark:text-slate-400"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="map" class="sm:mx-20 sm:my-20"></div>
+    </div>
+    <script src="country.js" type="module" async defer></script>
+  </body>
+</html>
