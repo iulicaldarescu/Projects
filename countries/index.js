@@ -35,12 +35,13 @@ const getFetched = async () => {
       let countryCard = document.createElement("div");
       countryParent.appendChild(countryCard);
       countryCard.classList.add(
-        "sm:mt-10",
+        "mt-10",
+        "w-full",
         "sm:w-3/5",
-        "sm:m-auto",
-        "sm:bg-white",
-        "sm:pb-14",
-        "sm:rounded-t-lg",
+        "m-auto",
+        "bg-white",
+        "pb-14",
+        "rounded-t-lg",
         "md:w-5/6",
         "lg:w-10/12",
         "xl:w-11/12",
@@ -58,9 +59,11 @@ const getFetched = async () => {
       imageContainer.appendChild(flag);
       flag.classList.add(
         "rounded-t-lg",
+        "h-30",
         "sm:h-40",
         "md:h-40",
         "w-full",
+        "lg-max-w-md",
         "lg:h-40",
         "2xl:h-56",
         "cursor-pointer",
@@ -102,7 +105,7 @@ const getFetched = async () => {
       //create a description container
       let descriptionContainer = document.createElement("div");
       countryCard.appendChild(descriptionContainer);
-      descriptionContainer.classList.add("sm:pl-10", "sm:text-lg");
+      descriptionContainer.classList.add("pl-10", "text-lg");
 
       //create an element for the country name
 
@@ -111,7 +114,7 @@ const getFetched = async () => {
       countryName.textContent = element.name.common;
       countryName.classList.add(
         "font-bold",
-        "sm:text-2xl",
+        "text-2xl",
         "mt-8",
         "md:text-lg",
         "lg:text-lg",
@@ -196,12 +199,13 @@ const filterByRegion = async (region) => {
       let countryCard = document.createElement("div");
       countryParent.appendChild(countryCard);
       countryCard.classList.add(
-        "sm:mt-10",
+        "mt-10",
+        "w-full",
         "sm:w-3/5",
-        "sm:m-auto",
-        "sm:bg-white",
-        "sm:pb-14",
-        "sm:rounded-t-lg",
+        "m-auto",
+        "bg-white",
+        "pb-14",
+        "rounded-t-lg",
         "md:w-5/6",
         "lg:w-10/12",
         "xl:w-11/12",
@@ -216,20 +220,24 @@ const filterByRegion = async (region) => {
       imageContainer.classList.add("rounded-t-lg", "search-container");
       //create a image tag for the flag
 
+      ///
       let flag = document.createElement("img");
       imageContainer.appendChild(flag);
       flag.classList.add(
         "rounded-t-lg",
-        "sm:h-64",
+        "h-30",
+        "sm:h-40",
         "md:h-40",
         "w-full",
+        "lg-max-w-md",
         "lg:h-40",
-        "2xl:h-48",
+        "2xl:h-56",
         "cursor-pointer",
         "hover:scale-110",
         "transition",
         "duration-500"
       );
+
       flag.setAttribute("src", element.flags.png);
 
       flag.addEventListener("click", () => {
@@ -273,7 +281,7 @@ const filterByRegion = async (region) => {
       countryName.textContent = element.name.common;
       countryName.classList.add(
         "font-bold",
-        "sm:text-2xl",
+        "text-2xl",
         "mt-8",
         "md:text-lg",
         "lg:text-lg"
