@@ -1,0 +1,1 @@
+Shopping layout page built only with HTML + CSS
