@@ -3,7 +3,7 @@ const inputs = inputsDiv.querySelectorAll("input");
 const backArrow = document.querySelector("#back-arrow");
 
 backArrow.addEventListener("click", () => {
-  window.location.href = "./home.html";
+  window.location.href = "./index.html";
 });
 
 const createUser = async () => {
@@ -25,6 +25,7 @@ const createUser = async () => {
     headers: {
       "Content-type": "application/json",
     },
+
     body: JSON.stringify(user),
   });
 
@@ -51,19 +52,37 @@ const removeRedBorder = () => {
   });
 };
 
+const checkForDuplicates = async (email) => {
+  const checkDuplicates = await fetch("http://localhost:3000/users");
+  const duplicatesData = await checkDuplicates.json();
+
+  const isDuplicate = duplicatesData.some((element) => {
+    return element.email === email;
+  });
+
+  return isDuplicate;
+};
+
 const goToLoginPage = () => {
   setTimeout(() => {
-    window.location.href = "./home.html";
+    window.location.href = "./index.html";
   }, 1000);
 };
 
-submit.addEventListener("click", () => {
+submit.addEventListener("click", async () => {
   checkIfEmpty();
   if (isEmptyFound) {
     isEmptyFound = false;
-
     return;
   } else {
+    const email = document.querySelector("#email").value;
+    const isDuplicate = await checkForDuplicates(email);
+
+    if (isDuplicate) {
+      alert("Email already exists. Please use a different email.");
+      return;
+    }
+
     createUser();
     removeRedBorder();
     goToLoginPage();

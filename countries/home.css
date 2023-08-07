@@ -1,7 +1,5 @@
 body {
-    background-image: url('./design/defocused-complex-map-with-pinpoint.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
+   
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }

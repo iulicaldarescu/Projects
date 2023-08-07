@@ -1,7 +1,11 @@
 {
   "users": [
-    
+    {
+      "id": 1,
+      "firstName": "Iulian",
+      "lastName": "Caldarescu",
+      "email": "caldarescuiulian@gmail.com",
+      "password": "caldarescu"
+    }
   ]
-
-  
 }

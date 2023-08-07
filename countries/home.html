@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Log in</title>
+    <title>Which Country</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="home.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -15,52 +15,139 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <form class="w-2/5 m-auto mt-32">
-      <div class="mb-6">
-        <label
-          for="email"
-          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-          >Your email</label
-        >
-        <input
-          type="email"
-          id="registeredEmail"
-          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          placeholder="name@gmail.com"
-          required
-        />
-      </div>
-      <div class="mb-6">
-        <label
-          for="password"
-          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-          >Your password</label
-        >
-        <input
-          type="password"
-          id="registeredPassword"
-          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          required
-        />
-      </div>
 
-      <div class="sm:flex sm:justify-between mb-4">
-        <button
-          id="checkRegistered"
-          type="button"
-          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/tailwind.config.js"></script> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css"
+    /> -->
+
+    <link rel="stylesheet" href="home.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+  <body class="bg-gray-100 dark:bg-gray-700">
+    <div class="parent relative">
+      <nav
+        id="nav"
+        class="bg-slate-100 dark:bg-slate-800 fixed w-full top-0 z-20"
+      >
+        <div class="flex justify-between items-center py-8 px-5">
+          <a
+            href="./index.html"
+            id="logo"
+            class="text-xs sm:text-base font-bold dark:text-neutral-100"
+          >
+            Which Country?
+          </a>
+
+          <img src="./design/travel-1883060_1920.png" class="w-8 h-8" />
+
+          <div class="flex justify-between gap-6 items-center">
+            <div>
+              <p class="font-semibold">
+                <i id="dark-logo" class="fa-regular fa-moon cursor-pointer"></i>
+                <i
+                  id="light-logo"
+                  class="fa-regular fa-lightbulb hidden cursor-pointer"
+                  style="color: #ffffff"
+                ></i>
+                <span id="dark-logo-text" class="pl-2 text-xs sm:text-base"
+                  >Dark mode</span
+                >
+                <span
+                  id="light-logo-text"
+                  class="pl-2 hidden dark:text-neutral-100 text-xs sm:text-base"
+                  >Light mode</span
+                >
+              </p>
+            </div>
+            <div>
+              <p id="logged-user" class="font-bold dark:text-white"></p>
+            </div>
+            <div>
+              <button
+                id="sign-out"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+              >
+                Sign out
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="mt-32">
+        <label for="country-search"></label>
+        <div
+          class="flex search-container bg-white mt-10 mx-8 pl-8 rounded-md dark:bg-slate-400"
         >
-          Submit
-        </button>
-        <div class="text-center">
-          <a class="underline" href="/register.html">Don't have an account?</a>
+          <div class="flex items-center basis-1/12">
+            <i
+              id="search-icon"
+              class="fa-solid fa-magnifying-glass cursor-pointer"
+              style="color: #606060"
+            ></i>
+          </div>
+
+          <div class="flex items-center basis-10/12">
+            <input
+              id="country-search"
+              class="py-8 ml-8 w-11/12 outline-none dark:bg-slate-400 dark:text-neutral-100 placeholder-white"
+              type="text"
+              placeholder="Search for a country..."
+            />
+          </div>
+
+          <div class="flex justify-end items-center basis-1/12">
+            <i
+              id="delete-field"
+              class="fa-solid fa-xmark fa-xl cursor-pointer mr-4"
+              style="color: #606060"
+            ></i>
+          </div>
         </div>
       </div>
-    </form>
+
+      <div class="ml-8 mt-16">
+        <label for="filter-by-region"></label>
+        <select
+          class="py-6 pl-8 pr-16 rounded-md font-semibold border-none outline-none cursor-pointer dark:bg-slate-500 dark:text-neutral-100"
+          id="filter-by-region"
+          name="search"
+        >
+          <option value="" selected disabled class="white">
+            Filtery by Region
+          </option>
+          <option value="Africa">Africa</option>
+          <option value="Americas">America</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </div>
+    </div>
+
+    <div
+      id="country-parent"
+      class="md:grid md:grid-cols-2 lg:grid-cols-3 xl:w-4/6 lg:gap-10 w-5/6 m-auto gap-8"
+    ></div>
 
     <script src="home.js" type="module" async defer></script>
+    <!-- <script src="fetchInputField.js" type="module" async defer></script> -->
   </body>
 </html>

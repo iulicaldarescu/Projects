@@ -1,4 +1,4 @@
-import { mainUrl, countryParent } from "./index.js";
+import { mainUrl, countryParent } from "./home.js";
 
 export const filterByRegion = async (region) => {
   try {

@@ -1,4 +1,4 @@
-import { mainUrl, countryParent, searchCountryInput } from "./index.js";
+import { mainUrl, countryParent, searchCountryInput } from "./home.js";
 export const getFetched = async () => {
   try {
     const response = await fetch(mainUrl);
