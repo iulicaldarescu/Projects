@@ -51,21 +51,21 @@ export function ContactSection() {
             onChange={nameHandle}
             value={nameInput}
             placeholder="NAME"
-            className="bg-transparent border-b-2 p-4 focus:outline-none 2xl:text-xl"
+            className="bg-transparent border-b-2 p-4 focus:outline-none 2xl:text-xl text-white"
           ></input>
 
           <input
             onChange={emailHandle}
             value={emailInput}
             placeholder="EMAIL"
-            className="bg-transparent border-b-2 p-4 focus:outline-none 2xl:text-xl"
+            className="bg-transparent border-b-2 p-4 focus:outline-none 2xl:text-xl text-white"
           ></input>
 
           <textarea
             onChange={messageHandle}
             value={messageInput}
             placeholder="MESSAGE"
-            className="bg-transparent border-b-2 p-4 focus:outline-none 2xl:text-xl resize-none h-40"
+            className="bg-transparent border-b-2 p-4 focus:outline-none 2xl:text-xl resize-none h-40 text-white"
             maxLength={500}
           ></textarea>
 
