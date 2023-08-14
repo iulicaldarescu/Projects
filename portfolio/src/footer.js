@@ -16,7 +16,7 @@ export function Footer(props) {
           </a>
         </p>
         <p>
-          <a href="https://www.linkedin.com/feed/">{linkedIn}</a>
+          <a href="linkedin.com/in/iulian-caldarescu-a44535176">{linkedIn}</a>
         </p>
         <p>{twitter}</p>
         <p>{facebook}</p>

@@ -30,7 +30,9 @@ export function Portfolio(props) {
             </div>
             <div>
               {" "}
-              <a href="https://www.linkedin.com/feed/">{linkedIn}</a>
+              <a href="linkedin.com/in/iulian-caldarescu-a44535176">
+                {linkedIn}
+              </a>
             </div>
             <div>{twitter}</div>
             <div>{facebook}</div>
