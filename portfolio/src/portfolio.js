@@ -23,8 +23,15 @@ export function Portfolio(props) {
 
         <div className="w-4/6 m-auto bg-slate-800 md:w-full md:mr-0 md:mt-0 2xl:w-4/6">
           <div className="flex justify-center gap-4 mt-2 pt-4 md:justify-end md:gap-6 md:mr-4">
-            <div>{github}</div>
-            <div>{linkedIn}</div>
+            <div>
+              <a href="https://github.com/iulicaldarescu?tab=repositories">
+                {github}
+              </a>{" "}
+            </div>
+            <div>
+              {" "}
+              <a href="https://www.linkedin.com/feed/">{linkedIn}</a>
+            </div>
             <div>{twitter}</div>
             <div>{facebook}</div>
           </div>

@@ -10,8 +10,14 @@ export function Footer(props) {
       </p>
 
       <div className="flex justify-center gap-4 mt-6 sm:gap-8 md:gap-20 ">
-        <p>{github}</p>
-        <p>{linkedIn}</p>
+        <p>
+          <a href="https://github.com/iulicaldarescu?tab=repositories">
+            {github}
+          </a>
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/feed/">{linkedIn}</a>
+        </p>
         <p>{twitter}</p>
         <p>{facebook}</p>
       </div>
