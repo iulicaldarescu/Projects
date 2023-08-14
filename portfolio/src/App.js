@@ -139,7 +139,7 @@ function App() {
         ></Contact>
       </div>
 
-      <div className="md:grid md:grid-cols-2 gap-10 2xl:w-8/12 2xl:m-auto">
+      <div className="md:grid md:grid-cols-2 gap-14 2xl:w-8/12 2xl:m-auto">
         {projects.map((project, index) => {
           return (
             <Project

@@ -76,7 +76,7 @@ export function ContactSection() {
                 resetInputs();
               }}
               type="button"
-              className="p-1 border-b-4 border-green-800 text-white text-2xl 2xl:text-2xl"
+              className="px-4 py-1 rounded-xl bg-emerald-600 text-white text-2xl 2xl:text-2xl"
             >
               Send Message
             </button>
