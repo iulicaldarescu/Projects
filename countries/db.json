@@ -6,6 +6,20 @@
       "lastName": "Caldarescu",
       "email": "caldarescuiulian@gmail.com",
       "password": "caldarescu"
+    },
+    {
+      "id": 2,
+      "firstName": "Augustin",
+      "lastName": "Copilu",
+      "email": "augustin.copilu@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 3,
+      "firstName": "Raul",
+      "lastName": "petrar",
+      "email": "raul@raul.com",
+      "password": "123456"
     }
   ]
 }
