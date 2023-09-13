@@ -21,12 +21,16 @@ const projectThreeUrl = "/food api.png";
 const projectFourUrl = "/password-gen.png";
 const projectFiveUrl = "/calculator.png";
 const projectSixUrl = "/countries.png";
+const projectSevenUrl = "/weatherApp.png";
+const projectEightUrl = "/rock-paper-game.png";
 const onlineShopPic = "/online-shop.png";
 const tourismPic = "/tourism.png";
 const countriesPic = "/countriesPic.png";
 const foodPic = "/foodPic.png";
 const calculatorPic = "/calculatorPic.png";
 const passwordGenPic = "/passwordGenPic.png";
+const weatherPic = "/weatherPic.png";
+const rockPaperScissorsPic = "/rockpaperscissorPic.png";
 
 function App() {
   const skills = [
@@ -91,6 +95,23 @@ function App() {
       skills: ["HTML", "CSS", "JAVASCRIPT", "API"],
       url: "#",
       git: "https://github.com/iulicaldarescu/Projects/tree/main/countries",
+    },
+    {
+      project: projectSevenUrl,
+      openModal: () => openModal(weatherPic),
+      title: "Weather App",
+      skills: ["HTML", "CSS", "JAVASCRIPT", "API", "REACT"],
+      url: "#",
+      git: "https://github.com/iulicaldarescu/Projects/tree/main/weather-app",
+    },
+
+    {
+      project: projectEightUrl,
+      openModal: () => openModal(rockPaperScissorsPic),
+      title: "Rock Paper Scissors",
+      skills: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
+      url: "https://rock-paper-scissors-three-omega.vercel.app/",
+      git: "https://github.com/iulicaldarescu/Projects/tree/main/rock-paper-scissors",
     },
   ];
 
