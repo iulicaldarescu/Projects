@@ -84,7 +84,7 @@ function App() {
       openModal: () => openModal(calculatorPic),
       title: "Calculator",
       skills: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
-      url: "#",
+      url: "https://majestic-stocking.surge.sh/",
       git: "https://github.com/iulicaldarescu/Projects/tree/main/science%20computer",
     },
 
@@ -101,7 +101,7 @@ function App() {
       openModal: () => openModal(weatherPic),
       title: "Weather App",
       skills: ["HTML", "CSS", "JAVASCRIPT", "API", "REACT"],
-      url: "#",
+      url: "https://amused-sink.surge.sh/",
       git: "https://github.com/iulicaldarescu/Projects/tree/main/weather-app",
     },
 
