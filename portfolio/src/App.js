@@ -23,6 +23,7 @@ const projectFiveUrl = "/calculator.png";
 const projectSixUrl = "/countries.png";
 const projectSevenUrl = "/weatherApp.png";
 const projectEightUrl = "/rock-paper-game.png";
+const projectNineUrl = "/audiophile.png";
 const onlineShopPic = "/online-shop.png";
 const tourismPic = "/tourism.png";
 const countriesPic = "/countriesPic.png";
@@ -31,6 +32,7 @@ const calculatorPic = "/calculatorPic.png";
 const passwordGenPic = "/passwordGenPic.png";
 const weatherPic = "/weatherPic.png";
 const rockPaperScissorsPic = "/rockpaperscissorPic.png";
+const audiophilePic = "/audiophilePic.png";
 
 function App() {
   const skills = [
@@ -51,7 +53,7 @@ function App() {
       title: "Online Shop App",
       skills: ["HTML", "CSS"],
       url: "https://mellow-cactus-359e06.netlify.app/",
-      git: "https://github.com/iulicaldarescu/Projects/tree/main/Shopping%20page",
+      git: "https://github.com/iulicaldarescu/Web-Shopping-Page",
     },
 
     {
@@ -60,7 +62,7 @@ function App() {
       title: "Space Tourism Website",
       skills: ["HTML", "CSS", "JavaScript"],
       url: "#",
-      git: "https://github.com/iulicaldarescu/Projects/tree/main/space-tourism-website-main",
+      git: "https://github.com/iulicaldarescu/Web-Space-Tourism-",
     },
     {
       project: projectThreeUrl,
@@ -68,7 +70,7 @@ function App() {
       title: "Food Recipe API",
       skills: ["HTML", "CSS", "JavaScript", "API"],
       url: "https://benevolent-mooncake-8ce68f.netlify.app",
-      git: "https://github.com/iulicaldarescu/Projects/tree/main/Food%20API",
+      git: "https://github.com/iulicaldarescu/Web-find-meals",
     },
 
     {
@@ -77,7 +79,7 @@ function App() {
       title: "Password Generator",
       skills: ["HTML", "CSS", "JAVASCRIPT"],
       url: "https://nimble-figolla-1dde1d.netlify.app",
-      git: "https://github.com/iulicaldarescu/Projects/tree/main/password%20generator",
+      git: "https://github.com/iulicaldarescu/Web-password-generator",
     },
     {
       project: projectFiveUrl,
@@ -85,7 +87,7 @@ function App() {
       title: "Calculator",
       skills: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
       url: "https://majestic-stocking.surge.sh/",
-      git: "https://github.com/iulicaldarescu/Projects/tree/main/science%20computer",
+      git: "https://github.com/iulicaldarescu/Web-Science-Calculator",
     },
 
     {
@@ -94,7 +96,7 @@ function App() {
       title: "Which Country?",
       skills: ["HTML", "CSS", "JAVASCRIPT", "API"],
       url: "#",
-      git: "https://github.com/iulicaldarescu/Projects/tree/main/countries",
+      git: "https://github.com/iulicaldarescu/Which-Country",
     },
     {
       project: projectSevenUrl,
@@ -102,7 +104,7 @@ function App() {
       title: "Weather App",
       skills: ["HTML", "CSS", "JAVASCRIPT", "API", "REACT"],
       url: "https://amused-sink.surge.sh/",
-      git: "https://github.com/iulicaldarescu/Projects/tree/main/weather-app",
+      git: "https://github.com/iulicaldarescu/Web-Weather-App",
     },
 
     {
@@ -111,7 +113,16 @@ function App() {
       title: "Rock Paper Scissors",
       skills: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
       url: "https://rock-paper-scissors-three-omega.vercel.app/",
-      git: "https://github.com/iulicaldarescu/Projects/tree/main/rock-paper-scissors",
+      git: "https://github.com/iulicaldarescu/Web-Rock-Paper-Scissors",
+    },
+
+    {
+      project: projectNineUrl,
+      openModal: () => openModal(audiophilePic),
+      title: "Audiophile Website",
+      skills: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
+      url: "web-audiophile-project.vercel.app",
+      git: "https://github.com/iulicaldarescu/Web-Audiophile-Project",
     },
   ];
 
