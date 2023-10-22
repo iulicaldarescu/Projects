@@ -11,7 +11,7 @@ export function Modal(props) {
       ></div>
       {/* Center the modal content */}
 
-      <div className="absolute bg-white p-4 rounded-lg shadow-md sm:w-4/6 sm:h-5/6 overflow-auto w-4/5 h-4/6 lg:w-3/6 2xl:w-3/6">
+      <div className="absolute bg-white p-4 rounded-lg shadow-md w-4/5 h-4/6 sm:w-4/6 sm:h-5/6 overflow-auto lg:w-3/6 2xl:w-3/6">
         <div className="absolute top-0 right-0 mt-2 mr-10">
           <button
             className="fixed rounded-full p-2 bg-gray-100 hover:bg-gray-400 z-20 w-7 h-7

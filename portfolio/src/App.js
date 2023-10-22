@@ -121,7 +121,7 @@ function App() {
       openModal: () => openModal(audiophilePic),
       title: "Audiophile Website",
       skills: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
-      url: "web-audiophile-project.vercel.app",
+      url: "https://web-audiophile-project.vercel.app/",
       git: "https://github.com/iulicaldarescu/Web-Audiophile-Project",
     },
   ];
