@@ -24,6 +24,7 @@ const projectSixUrl = "/countries.png";
 const projectSevenUrl = "/weatherApp.png";
 const projectEightUrl = "/rock-paper-game.png";
 const projectNineUrl = "/audiophile.png";
+const projectTenUrl = "/Invoices-app.png";
 const onlineShopPic = "/online-shop.png";
 const tourismPic = "/tourism.png";
 const countriesPic = "/countriesPic.png";
@@ -33,6 +34,7 @@ const passwordGenPic = "/passwordGenPic.png";
 const weatherPic = "/weatherPic.png";
 const rockPaperScissorsPic = "/rockpaperscissorPic.png";
 const audiophilePic = "/audiophilePic.png";
+const invoicesPic = "/invoicesPic.png"
 
 function App() {
   const skills = [
@@ -44,7 +46,7 @@ function App() {
     "Responsive",
     "API Calls",
     "GIT",
-    "React",
+    "React", 
   ];
   const projects = [
     {
@@ -123,6 +125,14 @@ function App() {
       skills: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
       url: "https://web-audiophile-project.vercel.app/",
       git: "https://github.com/iulicaldarescu/Web-Audiophile-Project",
+    },
+    {
+      project: projectTenUrl,
+      openModal: () => openModal(invoicesPic),
+      title: "Invoices App",
+      skills: ["HTML", "CSS", "JAVASCRIPT", "REACT", "Supabase"],
+      url: "invoice-app-ten-ashy.vercel.app",
+      git: "https://github.com/iulicaldarescu/Invoice-app.git",
     },
   ];
 

@@ -22,7 +22,7 @@ export function Project(props) {
             src={project}
             onClick={openModal}
             alt="Project 1"
-            className="object-fit-cover max-h-96 w-10/12 sm:w-5/6 sm:max-h-full lg:h-96 2x md:h-72 2xl:h-[400px] 2xl:w-[800px] cursor-pointer rounded-2xl"
+            className="object-fit-cover max-h-72 w-8/12 sm:w-5/6 sm:max-h-full lg:h-96 2x md:h-72 2xl:h-[400px] 2xl:w-[800px] cursor-pointer rounded-2xl"
           ></img>
         </div>
 
