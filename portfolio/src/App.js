@@ -131,7 +131,7 @@ function App() {
       openModal: () => openModal(invoicesPic),
       title: "Invoices App",
       skills: ["HTML", "CSS", "JAVASCRIPT", "REACT", "Supabase"],
-      url: "invoice-app-ten-ashy.vercel.app",
+      url: "https://invoice-app-ten-ashy.vercel.app/",
       git: "https://github.com/iulicaldarescu/Invoice-app.git",
     },
   ];
