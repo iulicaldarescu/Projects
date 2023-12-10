@@ -22,14 +22,14 @@ export function Project(props) {
             src={project}
             onClick={openModal}
             alt="Project 1"
-            className="object-fit-cover max-h-72 w-8/12 sm:w-5/6 sm:max-h-full lg:h-96 2x md:h-72 2xl:h-[400px] 2xl:w-[800px] cursor-pointer rounded-2xl"
+            className="object-fit-cover max-h-72 w-8/12 sm:w-3/6 sm:max-h-72 md:w-5/6 lg:w-3/6 lg:h-96 2x md:h-72 2xl:h-[400px] 2xl:w-[400px] cursor-pointer rounded-2xl"
           ></img>
         </div>
 
-        <p className="text-2xl mt-4 ml-10 pb-2 font-extrabold text-green-800 md:text-2xl lg:text-2xl">
+        <p className="text-base mt-4 text-center pb-2 font-extrabold text-green-800 md:text-xl lg:text-xl">
           {title}
         </p>
-        <div className="flex flex-wrap gap-4 italic text-gray-300 font-bold ml-10 mt-2 text-lg lg:text-lg">
+        <div className="flex flex-wrap gap-4 italic text-gray-300 font-bold mt-2 text-md lg:text-lg justify-center">
           {skills.map((skill, index) => {
             return (
               <p className="bg-emerald-600 rounded-2xl px-5" key={index}>
@@ -38,7 +38,7 @@ export function Project(props) {
             );
           })}
         </div>
-        <div className="flex gap-6 mt-6 ml-10 text-sm text-slate-500">
+        <div className="flex gap-6 mt-6  text-sm text-slate-500 justify-center">
           <p onClick={projectPage} className="cursor-pointer">
             <span className="border-b-2 border-b-green-800 pb-1">
               VIEW SITE

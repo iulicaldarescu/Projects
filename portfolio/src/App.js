@@ -173,7 +173,7 @@ function App() {
       </div>
       <p className="mt-20 border-2"></p>
       <div className="flex justify-between my-20 font-bold align-middle mx-4 sm:mx-8 2xl:mx-48">
-        <h1 className="text-5xl text-white 2xl:text-7xl">Projects</h1>
+        <h1 className="text-3xl text-white 2xl:text-4xl">Projects</h1>
         <Contact
           marginTop={"mt-0"}
           textSize={"text-xl"}
