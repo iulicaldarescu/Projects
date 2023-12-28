@@ -25,6 +25,7 @@ const projectSevenUrl = "/weatherApp.png";
 const projectEightUrl = "/rock-paper-game.png";
 const projectNineUrl = "/audiophile.png";
 const projectTenUrl = "/Invoices-app.png";
+const projectElevenUrl = "/quizz.png";
 const onlineShopPic = "/online-shop.png";
 const tourismPic = "/tourism.png";
 const countriesPic = "/countriesPic.png";
@@ -34,7 +35,8 @@ const passwordGenPic = "/passwordGenPic.png";
 const weatherPic = "/weatherPic.png";
 const rockPaperScissorsPic = "/rockpaperscissorPic.png";
 const audiophilePic = "/audiophilePic.png";
-const invoicesPic = "/invoicesPic.png"
+const invoicesPic = "/invoicesPic.png";
+const quizz = "/quizzPic.png";
 
 function App() {
   const skills = [
@@ -46,7 +48,7 @@ function App() {
     "Responsive",
     "API Calls",
     "GIT",
-    "React", 
+    "React",
   ];
   const projects = [
     {
@@ -95,10 +97,10 @@ function App() {
     {
       project: projectSixUrl,
       openModal: () => openModal(countriesPic),
-      title: "Which Country?",
-      skills: ["HTML", "CSS", "JAVASCRIPT", "API"],
-      url: "#",
-      git: "https://github.com/iulicaldarescu/Which-Country",
+      title: "Country finder",
+      skills: ["HTML", "CSS", "TYPESCRIPT", "API", "REACT"],
+      url: "https://find-country-pradbl85j-iulicaldarescu.vercel.app/",
+      git: "https://github.com/iulicaldarescu/Find-Country.git",
     },
     {
       project: projectSevenUrl,
@@ -133,6 +135,14 @@ function App() {
       skills: ["HTML", "CSS", "JAVASCRIPT", "REACT", "Supabase"],
       url: "https://invoice-app-ten-ashy.vercel.app/",
       git: "https://github.com/iulicaldarescu/Invoice-app.git",
+    },
+    {
+      project: projectElevenUrl,
+      openModal: () => openModal(quizz),
+      title: "Front End Quizz",
+      skills: ["HTML", "CSS", "JAVASCRIPT", "REACT", "Supabase"],
+      url: "https://quizz-app-pi-virid.vercel.app/",
+      git: "https://github.com/iulicaldarescu/Quizz-App",
     },
   ];
 
