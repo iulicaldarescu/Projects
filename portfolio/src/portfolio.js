@@ -13,15 +13,15 @@ export function Portfolio(props) {
 
   return (
     <div className="md:flex md:flex-row-reverse md:relative">
-      <div className="md:flex md:justify-between md:basis-5/12 lg:basis-4/12">
+      <div className="md:flex md:justify-between md:basis-5/12 lg:basis-3/12 ">
         <p
-          className="text-white text-lg flex justify-center
-         md:absolute md:left-0 md:text-2xl md:font-bold md:mt-4 md:ml-6 2xl:text-3xl"
+          className="text-white text-md flex justify-center
+         md:absolute md:left-0 md:text-sm md:font-bold md:mt-4 md:ml-6 2xl:text-3xl"
         >
           iulian caldarescu
         </p>
 
-        <div className="w-4/6 m-auto bg-slate-800 md:w-full md:mr-0 md:mt-0 2xl:w-4/6">
+        <div className="w-3/6 m-auto bg-slate-800 md:w-full md:mr-0 md:mt-0 2xl:w-4/6 flex justify-center flex-col items-center">
           <div className="flex justify-center gap-4 mt-2 pt-4 md:justify-end md:gap-6 md:mr-4">
             <div>
               <a href="https://github.com/iulicaldarescu?tab=repositories">
@@ -38,20 +38,24 @@ export function Portfolio(props) {
             <div>{facebook}</div>
           </div>
 
-          <div>
-            <img src="/me.png" alt="Iulian" className="object-cover"></img>
+          <div className="flex justify-center w-44 ">
+            <img
+              src="/me.png"
+              alt="Iulian"
+              className="object-cover w-44 h-44 "
+            ></img>
           </div>
         </div>
       </div>
 
       <div className="md:basis-7/12 md:mt-20 lg:basis-8/12">
         <div className="text-white text-center mt-6 mx-4">
-          <p className="text-4xl md:font-extrabold md:text-4xl lg:text-5xl 2xl:text-4xl">
+          <p className="text-2xl md:font-extrabold md:text-4xl lg:text-3xl 2xl:text-4xl">
             Nice to meet you!
           </p>
-          <p className="text-4xl md:font-extrabold md:text-4xl md:mt-5 lg:text-5xl 2xl:text-5xl">
+          <p className="text-4xl md:font-extrabold md:text-4xl md:mt-5 lg:text-3xl 2xl:text-5xl">
             I'm {""}
-            <span className="border-b-4 border-b-green-800 md:font-extrabold md:text-4xl md:mt-5 lg:text-5xl 2xl:text-5xl">
+            <span className="border-b-4 border-b-green-800 md:font-extrabold md:text-4xl md:mt-5 lg:text-3xl 2xl:text-5xl">
               Iulian Caldarescu
             </span>
           </p>

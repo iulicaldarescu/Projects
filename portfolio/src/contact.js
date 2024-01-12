@@ -18,7 +18,7 @@ export function Contact(props) {
         onClick={scrollToBottom}
         className={`pb-2 ${marginTop} m-0 font-bold ${textSize} text-white flex ${alignmentClass} cursor-pointer`}
       >
-        <span className=" border-b-4 border-b-green-800 pb-2 2xl:text-3xl">
+        <span className=" border-b-4 border-b-green-800 pb-2 2xl:text-xl">
           {" "}
           CONTACT ME
         </span>

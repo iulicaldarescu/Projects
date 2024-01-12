@@ -22,14 +22,14 @@ export function Project(props) {
             src={project}
             onClick={openModal}
             alt="Project 1"
-            className="object-fit-cover max-h-72 w-8/12 sm:w-3/6 sm:max-h-72 md:w-5/6 lg:w-3/6 lg:h-96 2x md:h-72 2xl:h-[400px] 2xl:w-[400px] cursor-pointer rounded-2xl"
+            className="object-fit-cover h-56 max-h-72 w-7/12  sm:w-2/6 sm:max-h-72 md:w-5/6 md:h-60  lg:w-3/5 lg:h-[12rem] xl:h-[15rem] 2xl:h-[400px] 2xl:w-[400px] cursor-pointer rounded-2xl"
           ></img>
         </div>
 
         <p className="text-base mt-4 text-center pb-2 font-extrabold text-green-800 md:text-xl lg:text-xl">
           {title}
         </p>
-        <div className="flex flex-wrap gap-4 italic text-gray-300 font-bold mt-2 text-md lg:text-lg justify-center">
+        <div className="flex flex-wrap gap-4 italic text-gray-300 font-bold mt-2 text-md sm:text-sm sm:px-32 md:px-4 lg:text-base lg:px-10 justify-center">
           {skills.map((skill, index) => {
             return (
               <p className="bg-emerald-600 rounded-2xl px-5" key={index}>

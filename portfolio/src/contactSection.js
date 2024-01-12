@@ -37,10 +37,10 @@ export function ContactSection() {
   return (
     <div className="bg-gray-600 mt-10 lg:px-32 2xl:px-64">
       <div className="w-2/3 m-auto">
-        <p className="text-white text-5xl font-bold text-center mb-8 pt-16">
+        <p className="text-white text-2xl font-bold text-center mb-8 pt-16">
           Contact
         </p>
-        <p className="text-white text-lg text-center md:px-16 2xl:text-2xl">
+        <p className="text-white text-md text-center md:px-16 2xl:text-2xl">
           I would love to hear about your company, your projects and how I could
           help. Please fill the form and I will get back to you as soon as
           possible.{" "}
@@ -76,7 +76,7 @@ export function ContactSection() {
                 resetInputs();
               }}
               type="button"
-              className="px-4 py-1 rounded-xl bg-emerald-600 text-white text-2xl 2xl:text-2xl"
+              className="px-4 py-1 rounded-xl bg-emerald-600 text-white text-md 2xl:text-xl"
             >
               Send Message
             </button>
