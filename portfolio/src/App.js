@@ -14,6 +14,7 @@ import { ContactSection } from "./contactSection";
 import { Footer } from "./footer";
 import { Modal } from "./modal";
 import { useState, useEffect } from "react";
+import quizzPic from "../public/quizzPic.png";
 
 const projectThreeUrl = "feedback-app.png";
 const projectFourUrl = "/password-gen.png";
@@ -31,22 +32,22 @@ const weatherPic = "/weatherPic.png";
 const rockPaperScissorsPic = "/rockpaperscissorPic.png";
 const audiophilePic = "/audiophilePic.png";
 const invoicesPic = "/invoicesPic.png";
-const quizzPic = "/quizzPic.png";
+
 const feedbackPic = "/feedbackPic.png";
+const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "Tailwind CSS",
+  "Bootstrap",
+  "Responsive",
+  "API Calls",
+  "GIT",
+  "React",
+  "Supabase",
+];
 
 function App() {
-  const skills = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "Tailwind CSS",
-    "Bootstrap",
-    "Responsive",
-    "API Calls",
-    "GIT",
-    "React",
-    "Supabase",
-  ];
   const projects = [
     {
       project: projectFourUrl,
@@ -109,7 +110,7 @@ function App() {
     },
     {
       project: projectElevenUrl,
-      openModal: () => openModal(quizz),
+      openModal: () => openModal(quizzPic),
       title: "FrontEnd Quizz",
       skills: ["HTML", "TAILWIND CSS", "JAVASCRIPT", "REACT", "Supabase"],
       url: "https://quizz-app-pi-virid.vercel.app/",
