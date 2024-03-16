@@ -109,7 +109,7 @@ function App() {
     },
     {
       project: projectElevenUrl,
-      openModal: () => openModal(quizzPic),
+      openModal: () => openModal(quizz),
       title: "FrontEnd Quizz",
       skills: ["HTML", "TAILWIND CSS", "JAVASCRIPT", "REACT", "Supabase"],
       url: "https://quizz-app-pi-virid.vercel.app/",
