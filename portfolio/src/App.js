@@ -14,7 +14,7 @@ import { ContactSection } from "./contactSection";
 import { Footer } from "./footer";
 import { Modal } from "./modal";
 import { useState, useEffect } from "react";
-import quizzPic from "../public/quizzPic.png";
+import quizzPic from "../src/quizzPic.png";
 
 const projectThreeUrl = "feedback-app.png";
 const projectFourUrl = "/password-gen.png";
