@@ -15,6 +15,7 @@ import { Footer } from "./footer";
 import { Modal } from "./modal";
 import { useState, useEffect } from "react";
 
+const projectThreeUrl = "feedback-app.png";
 const projectFourUrl = "/password-gen.png";
 const projectFiveUrl = "/calculator.png";
 const projectSixUrl = "/countries.png";
@@ -31,6 +32,7 @@ const rockPaperScissorsPic = "/rockpaperscissorPic.png";
 const audiophilePic = "/audiophilePic.png";
 const invoicesPic = "/invoicesPic.png";
 const quizz = "/quizzPic.png";
+const feedbackPic = "/feedbackPic.png";
 
 function App() {
   const skills = [
@@ -43,6 +45,7 @@ function App() {
     "API Calls",
     "GIT",
     "React",
+    "Supabase",
   ];
   const projects = [
     {
@@ -111,6 +114,14 @@ function App() {
       skills: ["HTML", "TAILWIND CSS", "JAVASCRIPT", "REACT", "Supabase"],
       url: "https://quizz-app-pi-virid.vercel.app/",
       git: "https://github.com/iulicaldarescu/Quizz-App",
+    },
+    {
+      project: projectThreeUrl,
+      openModal: () => openModal(feedbackPic),
+      title: "Feedback-app",
+      skills: ["HTML", "TAILWIND CSS", "JAVASCRIPT", "REACT", "Supabase"],
+      url: "https://product-feedback-w86y-71pxe8hzf-iulicaldarescus-projects.vercel.app/",
+      git: "https://github.com/iulicaldarescu/Product-feedback",
     },
   ];
 
