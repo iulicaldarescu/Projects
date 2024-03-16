@@ -31,7 +31,7 @@ const weatherPic = "/weatherPic.png";
 const rockPaperScissorsPic = "/rockpaperscissorPic.png";
 const audiophilePic = "/audiophilePic.png";
 const invoicesPic = "/invoicesPic.png";
-const quizz = "/quizzPic.png";
+const quizzPic = "/quizzPic.png";
 const feedbackPic = "/feedbackPic.png";
 
 function App() {
@@ -109,8 +109,8 @@ function App() {
     },
     {
       project: projectElevenUrl,
-      openModal: () => openModal(quizz),
-      title: "Front End Quizz",
+      openModal: () => openModal(quizzPic),
+      title: "FrontEnd Quizz",
       skills: ["HTML", "TAILWIND CSS", "JAVASCRIPT", "REACT", "Supabase"],
       url: "https://quizz-app-pi-virid.vercel.app/",
       git: "https://github.com/iulicaldarescu/Quizz-App",
